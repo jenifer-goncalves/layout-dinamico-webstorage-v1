@@ -18,6 +18,10 @@ colorPicker.addEventListener('input', (e) => {
 });
 
 colorArtigos.addEventListener('input', (e) =>{
+    const color = e.target.value;
+    newsArticles.forEach(article => {article.style.backgroundColor = color;});
+    localStorage.setItem('articleColor', color);
+
 });
 
 fonte.addEventListener('change', (e) =>{
