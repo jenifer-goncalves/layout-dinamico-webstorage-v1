@@ -1,0 +1,36 @@
+:root{
+    --primary-color: #4285f4;
+    --text-color: #333;
+    --bg-color: #fff
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.p1{
+    font-family: "Montserrat";
+    font-size: x-large;
+}
+
+.p2{
+    font-family: "Open Sans";
+    font-size: x-large;
+}
+
+.p3{
+    font-family: "Roboto Condensed";
+    font-size: x-large;
+}
+
+body.dark{
+    --text-color: #f1f1f1;
+    --bg-color: #121212;
+
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias de IA</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Conexão API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="page">
+    <header class="header">
+        <h1 class="header__title">Últimas notícias de IA</h1>
+        <div class="header__controls">
+            <div class="control-group">
+                <label for="color-picker">Cor:</label>
+                <input type="color" id="color-picker" class="control-group__input">
+            </div>
+
+            <div class="control-group">
+                <label for="font-select">Fonte:</label>
+                <select id="font-select" class="control-group__select">
+                    <option value="Montserrat">Montserrat</option>
+                    <option value="Open Sans">Open Sans</option>
+                    <option value="Roboto Condensed">Roboto Condensed</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="article-color-picker">Cor dos Artigos:</label>
+                <input type="color" id="article-color-picker" class="control-group__input">
+            </div>
+
+            <button id="theme-toggle" class="header__theme-toggle">
+                <span class="material-icons">dark_mode</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <article class="news">
+            <h2 class="news__title">Lorem</h2>
+            <p class="news__content">Lorem</p>
+        </article>
+
+        <article class="news">
+            <h2 class="news__title">Lorem</h2>
+            <p class="news__content">Lorem</p>
+        </article>
+
+        <article class="news">
+            <h2 class="news__title">Lorem</h2>
+            <p class="news__content">Lorem</p>
+        </article>
+        
+        <article class="news">
+            <h2 class="news__title">Lorem</h2>
+            <p class="news__content">Lorem</p>
+        </article>
+    </main>
+</body>
+</html>
