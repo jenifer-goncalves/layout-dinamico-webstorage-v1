@@ -12,6 +12,7 @@ const loadPreferences = () =>{
 
 colorPicker.addEventListener('input', (e) => {
     const color = e.target.value;
+    console.log(color)
     document.documentElement.style.setProperty('--primary-color', color);
     localStorage.setItem('primaryColor', color);
 });
