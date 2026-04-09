@@ -25,6 +25,8 @@ colorArtigos.addEventListener('input', (e) =>{
 });
 
 fonte.addEventListener('change', (e) =>{
+    const fonte = e.target.value;
+    document.documentElement
 });
 
 themeToggle.addEventListener('click', () =>{
