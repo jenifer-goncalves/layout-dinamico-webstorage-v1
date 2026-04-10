@@ -1,7 +1,8 @@
 :root{
     --primary-color: #4285f4;
     --text-color: #333;
-    --bg-color: #fff
+    --bg-color: #fff;
+    --font-family: "Monteserrat", sans-serif
 
 }
 
