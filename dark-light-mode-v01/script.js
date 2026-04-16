@@ -1,22 +1,20 @@
 // Evento que é disparado quando o conteúdo do DOM (estrutura HTML) é totalmente carregado
-document.addEventListener("DOMContentLoaded", function(){
-    
-});
+document.addEventListener("DOMContentLoaded", () => {
 
-// Verifica no localStorage se existe um tema salvo. Se não houver, define o tema padrão como 'light'
-let temaSalvo = localStorage.getItem('tema');
+    // Verifica no localStorage se existe um tema salvo. Se não houver, define o tema padrão como 'light'
+    let temaSalvo = localStorage.getItem('tema');
 
-if (!temaSalvo){
+    if (!temaSalvo){
     temaSalvo = 'light';
- }
+    }
 
-// Adiciona a classe correspondente ao tema (light ou dark) no corpo da página (body)
-document.body.classList.add(temaSalvo);
+    // Adiciona a classe correspondente ao tema (light ou dark) no corpo da página (body)
+    document.body.classList.add(temaSalvo);
 
-// Seleciona o botão de alternar tema usando o ID 'toggle-theme' e adiciona um evento de clique
-  const btn = document.querySelector("#toggle-theme");
+    // Seleciona o botão de alternar tema usando o ID 'toggle-theme' e adiciona um evento de clique
+    const btn = document.querySelector("#toggle-theme");
 
-    btn.addEventListener("click", function(){
+    btn.addEventListener("click", () => {
         console.log("Verifica se clica")
     });
     
@@ -32,3 +30,5 @@ document.body.classList.add(temaSalvo);
    
 
     // Armazena o novo tema no localStorage para que a preferência do usuário seja mantida
+});
+
