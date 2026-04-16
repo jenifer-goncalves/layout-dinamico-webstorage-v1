@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --primary-color-light: #f0f0f0;
+  --secondary-color-light: #ffffff;
+  --text-color-light: #333;
+  --hover-color-light: #ddd;
+  --button-bg-light: #e0e0e0;
+  --button-hover-light: #ccc;
+  --sidebar-bg-light: #ffffff;
+
+  --primary-color-dark: #1e1e1e;
+  --secondary-color-dark: #2e2e2e;
+  --text-color-dark: #f0f0f0;
+  --hover-color-dark: #555;
+  --button-bg-dark: #333;
+  --button-hover-dark: #444;
+  --sidebar-bg-dark: #2e2e2e;
+}
+
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+.header{
+    width: auto;
+    min-height: 100vh;
+    padding-top: 20px;
+    gap: 15px;
+    background-color: rgb(117, 6, 60);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar li{
+    display: inline-block;
+    gap: 20px;
+    list-style: none;
+    background-color: rgb(211, 102, 153);
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.247);
+    color: #fff ;
+}
+
+.sidebar li:hover{
+    background-color: rgb(199, 23, 105);
+    color: aliceblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar a{
+    flex-direction: column;
+}
+
+.main{
+    padding: 25px;
+}
