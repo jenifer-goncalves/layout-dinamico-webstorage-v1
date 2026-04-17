@@ -25,7 +25,7 @@ const loadPreferences = () =>{
     // Fonte
     const savedFont = localStorage.getItem('font-family');
     if (savedFont){
-        document.documentElement.style.setProperty('--font-family', savedFont);
+        body.style.fontFamily = savedFont
         fonte.value = savedFont;
     }
 
@@ -46,6 +46,7 @@ colorPicker.addEventListener('input', (e) => {
 
 colorArtigos.addEventListener('input', (e) => {
     const color = e.target.value;
+    console.log(color)
     newsArticles.forEach(article => {article.style.backgroundColor = color;});
     localStorage.setItem('articleColor', color);
 
@@ -59,14 +60,18 @@ fonte.addEventListener('change', (e) => {
 });
 
 themeToggle.addEventListener('click', () =>{
-    body.classList.toggle('dark');
-    const isDark = body.classList.contains('dark');
+    const isDark = body.classList.toggle('dark');
+   
+    themeToggle.textContent = ''; 
 
-    themeToggle.innerHTML = isDark
-    ? '<span class="material-icons">light_mode</span>'
-    : '<span class="material-icons">dark_mode</span>';
+    const iconeSpan = document.createElement('span');
+    iconeSpan.className = 'material-icons';
+    iconeSpan.textContent = isDark ? 'light_mode' : 'dark_mode';
 
-    localStorage.setItem('theme', isDark ? 'dark' : 'light')
+   // Lembra que o appendChild vai colocar no final da lista plmds!!!
+    themeToggle.appendChild(iconeSpan);
+
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
 
 loadPreferences();
