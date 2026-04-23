@@ -95,13 +95,13 @@ a:hover {
   }
 
   /** Ícone hamburger */
-  .menu__hamburger {
+  .menu__hamburguer {
     border-top: 2px solid;
     width: 20px;
   }
 
-  .menu__hamburger::before,
-  .menu__hamburger::after {
+  .menu__hamburguer::before,
+  .menu__hamburguer::after {
     content: '';
     display: block;
     width: 20px;
@@ -113,15 +113,15 @@ a:hover {
   }
 
   /** Transformação para "X" */
-  .menu.active .menu__hamburger {
+  .menu.active .menu__hamburguer {
     border-top-color: transparent;
   }
 
-  .menu.active .menu__hamburger::before {
+  .menu.active .menu__hamburguer::before {
     transform: rotate(135deg);
   }
 
-  .menu.active .menu__hamburger::after {
+  .menu.active .menu__hamburguer::after {
     transform: rotate(-135deg);
     top: -7px;
   }
